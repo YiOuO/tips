@@ -14,6 +14,7 @@ Welcome to Some tips's documentation!
    DualSPHysics
    OpenFOAM
    MachineLearning
+   Paraview
    .. PPT2PNG
    .. Reef3d
    .. DMD
