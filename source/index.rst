@@ -15,6 +15,7 @@ Welcome to Some tips's documentation!
    OpenFOAM
    MachineLearning
    Paraview
+   Matplotlib
    .. PPT2PNG
    .. Reef3d
    .. DMD
