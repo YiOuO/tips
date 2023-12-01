@@ -10,14 +10,15 @@ Welcome to Some tips's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   
-   PPT2PNG
    Word2PDF
    DualSPHysics
-   Reef3d
-   DMD
-   MachineLearning
    OpenFOAM
+   MachineLearning
+   .. PPT2PNG
+   .. Reef3d
+   .. DMD
+   
+   
 
 Indices and tables
 ==================
