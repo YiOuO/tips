@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>A quick start guide to use DualSPHysics &mdash; Some tips  documentation</title>
+  <title>Some tips to use DualSPHysics &mdash; Some tips  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
 
@@ -45,10 +45,11 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Word2PDF.html">Word转PDF时图片无损输出</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">A quick start guide to use DualSPHysics</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Some tips to use DualSPHysics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="OpenFOAM.html">A quick start guide to use OpenFOAM</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Paraview.html">Paraview 保存高分辨率图片</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Matplotlib.html">Matplotlib 使用latex渲染公式（为python画图正名！）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Dual%2BTorch.html">AI-assisted DualSPHysics</a></li>
 </ul>
 
         </div>
@@ -65,7 +66,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">A quick start guide to use DualSPHysics</li>
+      <li class="breadcrumb-item active">Some tips to use DualSPHysics</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/DualSPHysics.md.txt" rel="nofollow"> View page source</a>
       </li>
@@ -75,9 +76,33 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="a-quick-start-guide-to-use-dualsphysics">
-<h1>A quick start guide to use DualSPHysics<a class="headerlink" href="#a-quick-start-guide-to-use-dualsphysics" title="Link to this heading">¶</a></h1>
-<p>Underdevelopment</p>
+  <section id="some-tips-to-use-dualsphysics">
+<h1>Some tips to use DualSPHysics<a class="headerlink" href="#some-tips-to-use-dualsphysics" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p>import stl file and transfer</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">drawfilestl</span> <span class="n">file</span><span class="o">=</span><span class="s2">&quot;CaseWavemaker2D_Structure.stl&quot;</span> <span class="n">autofill</span><span class="o">=</span><span class="s2">&quot;true&quot;</span> <span class="n">advanced</span><span class="o">=</span><span class="s2">&quot;true&quot;</span><span class="o">&gt;</span>
+	<span class="o">&lt;</span><span class="n">drawmove</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;4&quot;</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;0&quot;</span> <span class="n">z</span><span class="o">=</span><span class="s2">&quot;0&quot;</span> <span class="o">/&gt;</span>
+	<span class="o">&lt;</span><span class="n">drawscale</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;0.2&quot;</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;0.2&quot;</span> <span class="n">z</span><span class="o">=</span><span class="s2">&quot;0.2&quot;</span> <span class="o">/&gt;</span>
+	<span class="o">&lt;</span><span class="n">drawrotate</span> <span class="n">angx</span><span class="o">=</span><span class="s2">&quot;#xang&quot;</span> <span class="n">angy</span><span class="o">=</span><span class="s2">&quot;0&quot;</span> <span class="n">angz</span><span class="o">=</span><span class="s2">&quot;0&quot;</span> <span class="o">/&gt;</span>
+	<span class="o">&lt;</span><span class="n">depth</span> <span class="n">depthmin</span><span class="o">=</span><span class="s2">&quot;#Dp*0.1&quot;</span> <span class="o">/&gt;</span>
+<span class="o">&lt;/</span><span class="n">drawfilestl</span><span class="o">&gt;</span>    
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>debug</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">G</span><span class="p">:</span>\<span class="n">VEM</span>\<span class="n">DualSPHysics_v5</span><span class="mf">.2</span><span class="n">_BETA</span>\<span class="n">examples</span>\<span class="n">main</span>\<span class="mi">20</span><span class="n">_Osdp</span>\<span class="n">CaseOsDp2D_out</span><span class="o">/</span><span class="n">CaseOsDp2D</span> <span class="n">G</span><span class="p">:</span>\<span class="n">VEM</span>\<span class="n">DualSPHysics_v5</span><span class="mf">.2</span><span class="n">_BETA</span>\<span class="n">examples</span>\<span class="n">main</span>\<span class="mi">20</span><span class="n">_Osdp</span>\<span class="n">CaseOsDp2D_out</span> <span class="o">-</span><span class="n">dirdataout</span> <span class="n">data</span> <span class="o">-</span><span class="n">svres</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>measure from a specific interval</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">dirout2</span><span class="o">=%</span><span class="n">dirout</span><span class="o">%</span>\<span class="n">measuretool</span>
+<span class="o">%</span><span class="n">measuretool</span><span class="o">%</span> <span class="o">-</span><span class="n">dirin</span> <span class="o">%</span><span class="n">diroutdata</span><span class="o">%</span> <span class="o">-</span><span class="n">points</span> <span class="n">CaseWavemaker2D_wg0_2D</span><span class="o">.</span><span class="n">txt</span> <span class="o">-</span><span class="n">onlytype</span><span class="p">:</span><span class="o">-</span><span class="nb">all</span><span class="p">,</span><span class="o">+</span><span class="n">fluid</span> <span class="o">-</span><span class="n">elevation</span> <span class="o">-</span><span class="n">first</span><span class="p">:</span><span class="mi">2200</span> <span class="o">-</span><span class="n">last</span><span class="p">:</span><span class="mi">3000</span> <span class="o">-</span><span class="n">savecsv</span> <span class="o">%</span><span class="n">dirout2</span><span class="o">%/</span><span class="n">_wg1</span> <span class="o">-</span><span class="n">savevtk</span> <span class="o">%</span><span class="n">dirout2</span><span class="o">%/</span><span class="n">wg1</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="s2">&quot;</span><span class="si">%E</span><span class="s2">RRORLEVEL%&quot;</span> <span class="o">==</span> <span class="s2">&quot;0&quot;</span> <span class="n">goto</span> <span class="n">fail</span>
+</pre></div>
+</div>
 </section>
 
 

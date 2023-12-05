@@ -16,6 +16,7 @@ Welcome to Some tips's documentation!
    MachineLearning
    Paraview
    Matplotlib
+   Dual+Torch
    .. PPT2PNG
    .. Reef3d
    .. DMD
