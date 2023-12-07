@@ -17,6 +17,7 @@ Welcome to Some tips's documentation!
    Paraview
    Matplotlib
    Dual+Torch
+   Printer
    .. PPT2PNG
    .. Reef3d
    .. DMD
