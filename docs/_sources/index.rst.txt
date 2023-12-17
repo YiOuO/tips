@@ -18,6 +18,7 @@ Welcome to Some tips's documentation!
    Matplotlib
    Dual+Torch
    Printer
+   Trivial
    .. PPT2PNG
    .. Reef3d
    .. DMD
