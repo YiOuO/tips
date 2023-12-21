@@ -9,6 +9,13 @@
 	<depth depthmin="#Dp*0.1" />
 </drawfilestl>    
 ```
+**or**
+```
+<setmkbound mk="1" />
+<move x="0" y="0.0" z="0.0" />
+<drawfilestl file="holeplate.stl" autofill="true" advanced="true"/>
+<matrixreset />
+```
 - debug 
 ```
 G:\VEM\DualSPHysics_v5.2_BETA\examples\main\20_Osdp\CaseOsDp2D_out/CaseOsDp2D G:\VEM\DualSPHysics_v5.2_BETA\examples\main\20_Osdp\CaseOsDp2D_out -dirdataout data -svres
