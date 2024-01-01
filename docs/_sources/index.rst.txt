@@ -19,6 +19,7 @@ Welcome to Some tips's documentation!
    Dual+Torch
    Printer
    Trivial
+   Math
    .. PPT2PNG
    .. Reef3d
    .. DMD
