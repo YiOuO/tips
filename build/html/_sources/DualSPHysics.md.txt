@@ -26,3 +26,7 @@ set dirout2=%dirout%\measuretool
 %measuretool% -dirin %diroutdata% -points CaseWavemaker2D_wg0_2D.txt -onlytype:-all,+fluid -elevation -first:2200 -last:3000 -savecsv %dirout2%/_wg1 -savevtk %dirout2%/wg1
 if not "%ERRORLEVEL%" == "0" goto fail
 ```
+- multi layers dummy particle
+```
+<layers vdp="0,1,2" />
+```
