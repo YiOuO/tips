@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 import sphinx_rtd_theme
 project = 'Some tips'
-copyright = '2023, Yi'
+copyright = '2024, Yi'
 author = 'Yi'
 
 # -- General configuration ---------------------------------------------------
