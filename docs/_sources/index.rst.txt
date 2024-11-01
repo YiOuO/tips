@@ -20,6 +20,8 @@ Welcome to Some tips's documentation!
    Printer
    Trivial
    Math
+   SPH
+   GPT
    .. PPT2PNG
    .. Reef3d
    .. DMD
