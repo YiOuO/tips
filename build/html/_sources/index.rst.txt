@@ -21,6 +21,7 @@ Welcome to Some tips's documentation!
    Trivial
    Math
    SPH
+   GPT
    .. PPT2PNG
    .. Reef3d
    .. DMD
