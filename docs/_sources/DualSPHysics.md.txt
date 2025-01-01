@@ -30,3 +30,13 @@ if not "%ERRORLEVEL%" == "0" goto fail
 ```
 <layers vdp="0,1,2" />
 ```
+- Set the cylindrical cross-section particles to a circular distribution
+```
+<setdrawmode mode="full" />
+<setmkbound mk="11" />
+<setfrdrawmode auto="true" />
+<drawcylinder radius="0.125" mask="0">
+    <point x="8" y="0" z="0" />
+    <point x="8" y="0" z="1.2" />
+</drawcylinder>       
+```
