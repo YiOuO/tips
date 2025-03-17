@@ -40,3 +40,14 @@ if not "%ERRORLEVEL%" == "0" goto fail
     <point x="8" y="0" z="1.2" />
 </drawcylinder>       
 ```
+- Damping zone
+```
+<damping>
+    <dampingzone>
+        <limitmin x="1.5" y="0" z="0" />
+        <limitmax x="3" y="0" z="0" />
+        <overlimit value="1" />
+        <redumax value="10" />
+    </dampingzone>
+</damping>
+```
